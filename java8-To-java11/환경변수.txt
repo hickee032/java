@@ -1,0 +1,6 @@
+pc에 java jdk 8 버전 jdk 11버전 설치 되어야함
+
+java8.bat
+- java 8버전 환경변수 설정
+java11.bat
+- java 11버전 환경변수 설정
