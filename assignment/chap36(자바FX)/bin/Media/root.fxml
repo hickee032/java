@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane prefHeight="594.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Media.RootController">
+   <children>
+   
+   	<!-- Toolbar -->
+      <ToolBar prefHeight="26.0" prefWidth="819.0">
+        <items>
+            <HBox prefHeight="25.0" prefWidth="680.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnOpen" mnemonicParsing="false" onAction="#handleOpen" text="OPEN" />
+                  <Button fx:id="btnSave" mnemonicParsing="false" text="SAVE" />
+                  <Button fx:id="btnEdit" mnemonicParsing="false" text="EIDIT" />
+                  <Button fx:id="btnHelp" mnemonicParsing="false" onAction="#handleExit" text="EXIT" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" text="LOGIN" />
+    <!-- Email Button --> 
+            <Button mnemonicParsing="false" onAction="#handleSignUp" text="Sign Up" />
+        </items>
+      </ToolBar>
+      
+   <!-- Media Image -->
+      <StackPane layoutX="14.0" layoutY="46.0" prefHeight="430.0" prefWidth="790.0">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="430.0" fitWidth="790.0" />
+            <ImageView fx:id="imageView" fitHeight="430.0" fitWidth="790.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
+      
+   <!-- Play Button -->
+      <HBox layoutX="9.0" layoutY="527.0" prefHeight="52.0" prefWidth="335.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnPrivious" mnemonicParsing="false" onAction="#priviousVideo" prefHeight="50.0" prefWidth="50.0" text="｜◀" />
+            <Button fx:id="btnPause" mnemonicParsing="false" onAction="#pauseVideo" prefHeight="50.0" prefWidth="50.0" text="❚❚" />
+            <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#playVideo" prefHeight="50.0" prefWidth="50.0" text="▶" />
+            <Button fx:id="btnStop" mnemonicParsing="false" onAction="#stopVideo" prefHeight="50.0" prefWidth="50.0" text="■" />
+            <Button fx:id="btnNext" mnemonicParsing="false" onAction="#nextVideo" prefHeight="50.0" prefWidth="50.0" text="▶｜" />
+         </children>
+         
+      </HBox>
+      
+   <!-- Slider -->
+      <Slider fx:id="sliderMedia" layoutX="14.0" layoutY="490.0" prefHeight="15.0" prefWidth="790.0" />
+      
+      <Label layoutX="423.0" layoutY="510.0" text="volume" textAlignment="CENTER" />
+      <Slider fx:id="sliderVolume" layoutX="369.0" layoutY="536.0" majorTickUnit="30.0" prefHeight="25.0" prefWidth="140.0" showTickLabels="true" showTickMarks="true" />
+     
+      <Label layoutX="583.0" layoutY="510.0" text="Speed" />
+      <Slider fx:id="sliderSpeed" layoutX="529.0" layoutY="536.0" majorTickUnit="1.0" max="2.0" showTickLabels="true" showTickMarks="true" value="1.0" />
+      <Button layoutX="753.0" layoutY="515.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="46.0" text="LIST" />
+      <Button layoutX="754.0" layoutY="543.0" mnemonicParsing="false" text="TEXT" />
+   </children>
+   
+</AnchorPane>

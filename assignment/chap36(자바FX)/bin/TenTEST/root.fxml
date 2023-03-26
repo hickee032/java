@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="261.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TenTEST.RootController">
+   <children>
+      <Button fx:id="textClear" mnemonicParsing="false" prefHeight="23.0" prefWidth="226.0" text="초기화" textAlignment="CENTER" onAction="#btntextClear" />
+      
+      <Label prefHeight="15.0" prefWidth="300.0" text="10진수" />
+      <TextField fx:id="tenF" prefHeight="50.0" prefWidth="300.0" />
+      <Label prefHeight="15.0" prefWidth="300.0" text="2진수" />
+      <TextField fx:id="twoF" prefHeight="50.0" prefWidth="300.0" />
+      <Label prefHeight="15.0" prefWidth="300.0" text="8진수" />
+      <TextField fx:id="eigF" prefHeight="50.0" prefWidth="300.0" />
+      <Label prefHeight="15.0" prefWidth="300.0" text="16진수" />
+      <TextField fx:id="sixF" prefHeight="50.0" prefWidth="300.0" />
+   </children>
+</VBox>

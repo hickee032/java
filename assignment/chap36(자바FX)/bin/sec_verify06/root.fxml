@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.input.KeyCombination?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.TextArea?>
+
+
+<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sec_verify06.RootController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu text="파일">
+            <items>
+              <MenuItem text="새로만들기" onAction="#handleNew">
+              </MenuItem>
+              <MenuItem text="열기" onAction="#handleOpen">
+              </MenuItem>
+              <MenuItem text="저장" onAction="#handleSave">
+              </MenuItem>
+              <SeparatorMenuItem />
+              <MenuItem text="종료" onAction="#handleExit">
+              </MenuItem>  
+            </items>
+          </Menu>
+          <Menu text="편집">
+            <items>
+              <MenuItem text="실행취소" onAction="#handleCancel">
+              </MenuItem>
+              <SeparatorMenuItem />
+              <MenuItem text="잘라내기" onAction="#handleCancel">
+              </MenuItem>
+              <MenuItem text="복사" onAction="#handleCancel">
+              </MenuItem>
+              <MenuItem text="붙여넣기" onAction="#handleCancel">
+              </MenuItem>
+              <MenuItem text="삭제" onAction="#handleCancel">
+              </MenuItem>
+              <SeparatorMenuItem />
+              <MenuItem text="찾기" onAction="#handleCancel">
+              </MenuItem>
+              <MenuItem text="다음찾기" onAction="#handleCancel">
+              </MenuItem>
+              <MenuItem text="바꾸기" onAction="#handleCancel">
+              </MenuItem>
+              <MenuItem text="이동" onAction="#handleCancel">
+              </MenuItem>
+              <SeparatorMenuItem />
+              <MenuItem text="모두선택" onAction="#handleCancel">
+              </MenuItem>
+              <MenuItem text="시간/날짜" onAction="#handleCancel">
+              </MenuItem>
+            </items>
+          </Menu>
+          <Menu text="서식">
+            <items>
+              <CheckMenuItem text="자동줄바꿈" />
+              <CheckMenuItem text="글꼴" />
+            </items>
+          </Menu>
+          <Menu text="보기">
+            <items>
+              <CheckMenuItem text="상태표시줄" />
+            </items>
+          </Menu>
+          <Menu text="도움말">
+          <items>
+          	  <MenuItem text="도움말" onAction="#handleCancel">
+              </MenuItem>
+              <MenuItem text="정보" onAction="#handleCancel">
+              </MenuItem>
+          </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+   		<TextArea fx:id="textArea"/> 
+   </center>
+</BorderPane>

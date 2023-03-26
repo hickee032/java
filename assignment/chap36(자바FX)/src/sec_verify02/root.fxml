@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import com.sun.javafx.scene.control.skin.IntegerField?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" prefWidth="300" fx:controller="sec_verify02.RootController">
+
+<!-- 	<padding>
+		<Insets topRightBottomLeft = "10"/>
+	</padding> -->
+	
+	<children>
+		<Label prefWidth="150" prefHeight="10" text ="10진수" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+		<Label prefWidth="150" prefHeight="10" text ="2진수" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+		
+		<TextField fx:id="Ta101" prefWidth="150" prefHeight="50" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+		<TextField  fx:id="Ta21" prefWidth="150" prefHeight="50" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+		
+		<Label prefWidth="150" prefHeight="10" text ="10진수" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+		<Label prefWidth="150" prefHeight="10" text ="8진수" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+		
+		<TextField fx:id="Ta102" prefWidth="150" prefHeight="50" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+		<TextField fx:id="Ta81" prefWidth="150" prefHeight="50" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+		
+		<Label prefWidth="150" prefHeight="10" text ="10진수" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+		<Label prefWidth="150" prefHeight="10" text ="16진수" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+		
+		<TextField fx:id="Ta103" prefWidth="150" prefHeight="50" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+		<TextField fx:id="Ta161" prefWidth="150" prefHeight="50" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+	
+	</children>
+	
+</GridPane>
+

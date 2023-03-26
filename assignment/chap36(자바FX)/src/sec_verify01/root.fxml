@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Label?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" prefWidth="300" hgap="10" vgap="10" fx:controller="sec_verify01.RootController">
+	<padding>
+		<Insets topRightBottomLeft = "10"/>
+	</padding>
+	
+	<children>
+		<TextArea fx:id="result" prefWidth="70" prefHeight="70" GridPane.columnSpan="4"/>
+	
+		<Button fx:id="ac" prefWidth="70" prefHeight="70" text = "AC" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+		<Button fx:id="ks" prefWidth="70" prefHeight="70" text = "/" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+		<Button fx:id="kt" prefWidth="70" prefHeight="70" text = "*" GridPane.rowIndex="1" GridPane.columnIndex="2" />
+		<Button fx:id="km" prefWidth="70" prefHeight="70" text = "-" GridPane.rowIndex="1" GridPane.columnIndex="3" />
+		
+		<Button fx:id="k7" prefWidth="70" prefHeight="70" text = "7" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+		<Button fx:id="k8" prefWidth="70" prefHeight="70" text = "8" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+		<Button fx:id="k9" prefWidth="70" prefHeight="70" text = "9" GridPane.rowIndex="2" GridPane.columnIndex="2" />
+		<Button fx:id="kp" prefWidth="70" prefHeight="150" text = "+" GridPane.rowIndex="2" GridPane.columnIndex="3" GridPane.rowSpan="2" />
+		
+		<Button fx:id="k4" prefWidth="70" prefHeight="70" text = "4" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+		<Button fx:id="k5" prefWidth="70" prefHeight="70" text = "5" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+		<Button fx:id="k6" prefWidth="70" prefHeight="70" text = "6" GridPane.rowIndex="3" GridPane.columnIndex="2" />
+		
+		<Button fx:id="k1" prefWidth="70" prefHeight="70" text = "1" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+		<Button fx:id="k2" prefWidth="70" prefHeight="70" text = "2" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+		<Button fx:id="k3" prefWidth="70" prefHeight="70" text = "3" GridPane.rowIndex="4" GridPane.columnIndex="2" />
+		<Button fx:id="enter" prefWidth="70" prefHeight="150" text = "Enter" GridPane.rowIndex="4" GridPane.columnIndex="3" GridPane.rowSpan="2" />
+		
+		<Button prefWidth="150" prefHeight="70" text = "0" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+		<Button prefWidth="70" prefHeight="70" text = "-" GridPane.rowIndex="5" GridPane.columnIndex="2" />
+	
+	</children>
+	
+</GridPane>
+
